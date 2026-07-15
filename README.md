@@ -45,12 +45,9 @@ The converter reads the per-unit drafts in reading order, reads the Part divider
 
 ## Cover art
 
-`attached_assets/extrinsic-titles-cover.png` is the cover (1086 x 1448 px, installed 15 Jul 2026): a gold-on-navy scales-of-justice emblem (coins weighed against a flame) with the title set on top in glowing gold serif, in the NEC house style. It is built in two layers so the lettering stays crisp rather than AI-garbled:
+`attached_assets/extrinsic-titles-cover.png` is the cover (portrait, installed 15 Jul 2026): a finished gold-on-navy piece in the NEC house style, a scales-of-justice emblem (coins weighed against a flame) beneath the title "Extrinsic Titles" and the subtitle, generated whole (title baked in) from the ChatGPT prompt in `COVER_PROMPT.md`.
 
-- `attached_assets/extrinsic-titles-cover-art.png` is the raw, text-free illustration (from the ChatGPT prompt in `COVER_PROMPT.md`).
-- `tools/title_cover.py` typesets the title, subtitle, and "A Working Manuscript" tag onto that art and writes `extrinsic-titles-cover.png`.
-
-To change the art: replace `extrinsic-titles-cover-art.png` (portrait, about 1086 x 1448 px), then run `python3 tools/title_cover.py` and `python3 tools/make_placeholder_art.py --og-only` (refreshes `opengraph.jpg`), commit, and push. To change the title wording, edit the constants at the top of `tools/title_cover.py`. No app code change is needed. `tools/make_placeholder_art.py` (the original typographic placeholder, still the Open Graph card builder) is kept for reference.
+To swap in a new version later: overwrite that file (same filename; portrait, roughly 3:4), run `python3 tools/make_placeholder_art.py --og-only` to refresh the social-share card (`opengraph.jpg`), commit, and push. No app code change is needed. `tools/make_placeholder_art.py` (which generated the original typographic placeholder and still builds the Open Graph card) is kept for reference.
 
 ## Repo layout
 
