@@ -56,8 +56,8 @@ UNITS = (
     + ["appA", "appB", "appC", "appD", "appE", "appF", "appG"]
 )
 
-TITLE = "Capital, Risk, and the Sin of Usury"
-SUBTITLE = "The Forgotten History of the Extrinsic Titles"
+TITLE = "Extrinsic Titles"
+SUBTITLE = "Capital, Risk, and the Sin of Usury: The Forgotten History of the Extrinsic Titles"
 
 
 # ── slugs & inline formatting ──────────────────────────────────────────────
